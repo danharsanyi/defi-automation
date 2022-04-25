@@ -22,6 +22,7 @@ Feel free to deploy your own instance if you prefer, there's nothing in the code
 
 ## Usage
 Essentially, you send a POST request (I've set up a Cloud Scheduler Cron Job) to the corresponding project endpoint with your wallet address, private key and action, the service will do the rest.
+
 **Drip**
 ```
 POST: "https://defi-automation.ts.r.appspot.com/v1/webhooks/drip"
