@@ -17,8 +17,7 @@ export const Drip = async(eth: EthT) => {
 
   async function execute(abi: string) {
     const signedTxn = await eth.signTransaction(config.dripContractAddress, abi);
-    // return await eth.sendSignedTransaction(signedTxn.rawTransaction);
-    return signedTxn;
+    return await eth.sendSignedTransaction(signedTxn.rawTransaction);
   }
 
   return {
