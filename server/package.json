@@ -1,0 +1,31 @@
+{
+  "name": "defi-automation",
+  "version": "1.0.0",
+  "description": "An API to automate defi projects",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc --build",
+    "start": "node ./dist/app.js",
+    "start:dev": "tsc-watch --onsuccess \"node --experimental-json-modules dist/app.js\"",
+    "deploy": "gcloud app deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.6",
+    "ts-node": "^10.4.0",
+    "tsc-watch": "^4.5.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "web3": "^1.7.3"
+  }
+}
