@@ -11,7 +11,7 @@ An API for automating your Defi Projects, deployed on GCP App Engine.
 I had two main motivations for this project:
 
 1) I was sick of having to remember to hydrate my Drip wallet every 24 hours. There are days I don't have my computer with me and I just wanted to set and forget
-2) Learn more about interacting with the Ethereum blockchain
+2) Learn more about programmatically interacting with the Ethereum blockchain
 
 ## Security Disclaimer
 Of course, signing transactions requires a private key. I fully expect that no one will use this tool becuase of this. But it's useful for me, and the computing resources cost ~$0 so I figure why not open it up for others to use?
