@@ -1,4 +1,4 @@
-import { SignedTransaction, TransactionReceipt } from 'web3-core';
+import { TransactionReceipt } from 'web3-core';
 import { Drip, DripOptions } from './drip.js';
 import { EthT } from '../../modules/eth/eth.js';
 
@@ -14,7 +14,7 @@ async function run(eth: EthT, options: DripOptions) {
   };
 
   const drip = await Drip(eth);
-  let res: SignedTransaction;
+  let res: TransactionReceipt;
 
   if (action === 'hydrate') {
     res = await drip.hydrate();
