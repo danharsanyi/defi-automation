@@ -9,7 +9,7 @@
     "build": "rm -rf dist && tsc --build",
     "start": "node --experimental-json-modules ./dist/app.js",
     "start:dev": "tsc-watch --onsuccess \"node --experimental-json-modules dist/app.js\"",
-    "deploy": "gcloud app deploy"
+    "deploy": "npm run build && gcloud app deploy"
   },
   "author": "",
   "license": "ISC",
