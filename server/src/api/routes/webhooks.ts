@@ -22,7 +22,7 @@ export default (app: Router) => {
         return res.send("Supported actions are 'hydrate' and 'claim'");
       }
       
-      const eth = await Eth({wallet, key, chain: config.bscChain});
+      const eth = Eth({wallet, key, chain: config.bscChain});
       const result = await drip.run(eth, {action});
       return res.send( result );
     } catch( error ) {
