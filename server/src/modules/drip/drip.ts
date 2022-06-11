@@ -1,5 +1,5 @@
 import config from '../../config/index.js';
-import abi from './abi.json';
+import abi from './abi.json' assert {type: 'json'};
 import { EthT } from '../eth/eth.js';
 
 export type DripOptions = {
