@@ -1,6 +1,6 @@
-import config from '../../config/index.js';
+import config from '../../config/index';
 import abi from './abi.json' assert {type: 'json'};
-import { EthT } from '../eth/eth.js';
+import { EthT } from '../eth/eth';
 
 export type DripOptions = {
   action: 'hydrate' | 'claim';

@@ -1,6 +1,6 @@
 import { TransactionReceipt } from 'web3-core';
-import { Drip, DripOptions } from './drip.js';
-import { EthT } from '../../modules/eth/eth.js';
+import { Drip, DripOptions } from './drip';
+import { EthT } from '../../modules/eth/eth';
 
 const MIN_BNB_BALANCE = 0.02;
 

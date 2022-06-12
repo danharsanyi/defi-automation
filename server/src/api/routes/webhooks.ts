@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
-import config from '../../config/index.js';
-import drip from '../../modules/drip/index.js';
-import { Eth } from '../../modules/eth/eth.js';
+import config from '../../config/index';
+import drip from '../../modules/drip/index';
+import { Eth } from '../../modules/eth/eth';
 
 const router = Router();
 
