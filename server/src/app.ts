@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 
-import config from './config/index.js';
-import routes from './api/index.js';
+import config from './config/index';
+import routes from './api/index';
 
 async function start() {
   const app = express();

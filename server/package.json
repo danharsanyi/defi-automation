@@ -7,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist && tsc --build",
-    "start": "node --experimental-json-modules ./dist/app.js",
-    "start:dev": "tsc-watch --onsuccess \"node --experimental-json-modules dist/app.js\"",
+    "start": "node --experimental-json-modules --experimental-specifier-resolution=node ./dist/app.js",
+    "start:dev": "tsc-watch --onsuccess \"node --experimental-json-modules --experimental-specifier-resolution=node dist/app.js\"",
     "deploy": "npm run build && gcloud app deploy"
   },
   "author": "",
