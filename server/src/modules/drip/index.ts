@@ -4,13 +4,13 @@ import { EthT } from '../../modules/eth/eth';
 
 const MIN_BNB_BALANCE = 0.02;
 
-async function run(eth: EthT, options: DripOptions) {
+async function run(eth: EthT, options: DripOptions): Promise<TransactionReceipt> {
   const {action} = options;
   const bnbBalanceRaw = await eth.getBalance();
   const bnbBalance = Number(bnbBalanceRaw) / 10**18; // There are 10^18 wei in an ether
 
   if (bnbBalance < MIN_BNB_BALANCE) {
-    return 'BNB balance too low';
+    throw 'BNB balance too low';
   };
 
   const drip = await Drip(eth);
